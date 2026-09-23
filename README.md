@@ -79,4 +79,5 @@ Firebase database access should be secured using proper authentication and role-
 
 ## 👤 Author
 
-**Ganeshprabu M**
+**Amuthan R N  and 
+Ganeshprabu M**
