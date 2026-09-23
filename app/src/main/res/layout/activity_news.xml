@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main content layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="0dp"> <!-- Adjusted padding to ensure no extra space around the toolbar -->
+
+        <!-- Full-width Toolbar with hamburger icon -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary"
+            android:title="Automotive News"
+            android:titleTextColor="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:elevation="0dp" /> <!-- Set elevation to 0dp to remove shadow -->
+
+        <!-- News Section Layout -->
+        <LinearLayout
+            android:id="@+id/enterNewsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"> <!-- Initially hidden -->
+
+            <EditText
+                android:id="@+id/titleEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter News Title"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:scrollHorizontally="false"
+                android:gravity="top|start" />
+
+            <EditText
+                android:id="@+id/newsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter News Content"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:scrollHorizontally="false"
+                android:gravity="top|start"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/addNewsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add News"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- Sliding Menu with logout button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="16dp"
+        android:layout_gravity="start">
+
+        <Button
+            android:id="@+id/logoutButtonInMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

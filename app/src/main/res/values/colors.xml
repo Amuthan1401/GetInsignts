@@ -1,0 +1,10 @@
+<resources>
+    <!-- Existing color definitions -->
+    <color name="colorOnBackground">#000000</color> <!-- Black for light mode -->
+    <color name="colorOnSurfaceVariant">#666666</color> <!-- Gray for light mode -->
+
+    <!-- Added color definitions -->
+    <color name="colorPrimary">#6200EE</color> <!-- Primary color for your app -->
+    <color name="colorPrimaryDark">#3700B3</color> <!-- Darker variant of the primary color -->
+    <color name="colorAccent">#03DAC5</color> <!-- Accent color for buttons, links, etc. -->
+</resources>

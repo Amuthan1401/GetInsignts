@@ -1,0 +1,16 @@
+# -------- Android / Gradle --------
+/build/
+app/build/
+
+# -------- Local machine files --------
+local.properties
+
+# -------- IDE files --------
+.idea/
+*.iml
+
+# -------- Gradle cache --------
+.gradle/
+
+# -------- Firebase --------
+google-services.json
